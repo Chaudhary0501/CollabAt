@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 import { AttachFile } from "@mui/icons-material";
 import io from "socket.io-client";
 
-const socket = io.connect("http://localhost:8080");
+const socket = io.connect("https://collabat-1.onrender.com");
 
 const DiscussionRooms = () => {
   const [rooms] = useState([

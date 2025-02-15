@@ -22,7 +22,7 @@ const ChatRoom = () => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("http://localhost:8080");
+    const newSocket = io("https://collabat-1.onrender.com");
     setSocket(newSocket);
 
     newSocket.on("receive_message", (newMessage) => {
